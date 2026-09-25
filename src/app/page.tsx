@@ -1,10 +1,10 @@
-import Banner from '@/components/workouts/Banner'
+import Hero from '@/components/Hero';
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <Banner />
+        <Hero />
     </div>
   )
 }
