@@ -1,9 +1,10 @@
+import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { Clock3, Flame, Star } from "lucide-react";
 import type { Workout } from "@/types";
 
-export default function WorkoutCard({ workout }: { workout: Workout }) {
+const WorkoutCard = ({ workout }: { workout: Workout }) => {
   return (
     <Link
       href={`/workout/${workout.id}`}
@@ -55,3 +56,5 @@ export default function WorkoutCard({ workout }: { workout: Workout }) {
     </Link>
   );
 }
+
+export default WorkoutCard;

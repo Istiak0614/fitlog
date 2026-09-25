@@ -1,6 +1,6 @@
-import { ArrowDownRight } from "lucide-react";
+import React from 'react'
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className="bg-[#090a0c] px-5 py-10">
       <div className="mx-auto max-w-[1400px]">
@@ -18,15 +18,7 @@ export default function Hero() {
 
                 <span className="block">Every Set.</span>
               </h1>
-              <p
-                className="
-                  mt-[17px]
-                  max-w-[560px]
-                  text-[14px]
-                  leading-[20px]
-                  text-[#91949d]
-                "
-              >
+              <p className="mt-[17px] max-w-[560px] text-[14px] leading-[20px] text-[#91949d]">
                 FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
                 into today&apos;s plan, and watch the week&apos;s work add up.
               </p>
@@ -59,3 +51,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;

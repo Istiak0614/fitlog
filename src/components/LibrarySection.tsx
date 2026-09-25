@@ -1,12 +1,13 @@
 "use client";
 
+import React from 'react'
 import { Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { Workout } from "@/types";
 import { getAllWorkouts } from "@/utils/api";
 import WorkoutCard from "@/components/WorkoutCard";
 
-export default function LibrarySection() {
+const LibrarySection = () => {
   const [workouts, setWorkouts] = useState<Workout[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -104,3 +105,5 @@ export default function LibrarySection() {
     </section>
   );
 }
+
+export default LibrarySection;

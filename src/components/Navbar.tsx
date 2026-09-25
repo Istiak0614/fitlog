@@ -11,7 +11,7 @@ const navItems = [
   { label: "My Plan", href: "/my-plan" },
 ];
 
-export default function Navbar() {
+const Navbar = () => {
   const pathname = usePathname();
   const { plan, saved } = usePlan();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -115,3 +115,4 @@ export default function Navbar() {
     </header>
   );
 }
+export default Navbar;
