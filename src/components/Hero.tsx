@@ -1,4 +1,5 @@
 import React from 'react'
+import {ArrowDownRight,} from "lucide-react";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
                 Workout Library
               </p>
               <h1 className="display-font text-[43px] font-black uppercase leading-[0.94] tracking-[-0.015em] text-white sm:text-[48px] lg:text-[55px]">
-                <span className="block whitespace-nowrap">
+                <span className="block sm:whitespace-nowrap">
                   Train With Intent. Log
                 </span>
 
@@ -36,6 +37,7 @@ const Hero = () => {
                 "
               >
                 Browse Workouts
+                <ArrowDownRight size={14}/>
               </a>
             </div>
             <div

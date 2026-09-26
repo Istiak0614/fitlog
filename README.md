@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💪 FitLog — Workout Library
 
-## Getting Started
+FitLog is a responsive workout-library and daily-plan application built with Next.js, TypeScript, Tailwind CSS, React Context, and the FitLog API. Users can browse 12 workouts, open detailed exercise pages, build a five-workout daily plan, save workouts for later, track live metrics, sort/search lists, mark exercises complete, and preserve their plan across reloads.
 
-First, run the development server:
+## 🔗 API
+
+- All workouts: `https://api.abcz.workers.dev/api/fitlog`
+- Single workout: `https://api.abcz.workers.dev/api/fitlog/:id`
+
+## 🛠️ Technologies
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- React Context API
+- react-hot-toast
+- lucide-react icons
+- localStorage persistence
+
+## ✨ Key Features
+
+1. Responsive workout library with API data and a 3-column desktop grid.
+2. Dynamic workout detail pages with specs, instructions, plan and save actions.
+3. Shared Context state for Today's Plan, Saved workouts, navbar counters and metrics.
+4. Five-workout daily cap, duplicate protection and toast notifications.
+5. My Plan tabs with sorting by duration/calories/rating and search by name/tag/equipment.
+6. Mark as Done and Remove controls with real-time UI updates.
+7. localStorage persistence so Plan and Saved data survive page reloads.
+8. Loading states, API error handling, responsive navigation and custom 404 page.
+
+## 🖼️ Logo and Banner
+
+### Logo
+
+`public/images/logo.png`
+
+
+### Hero banner
+
+`public/images/hero-banner.png`
+
+
+## 🚀 Getting Started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For a production check:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   ├── not-found.tsx
+│   ├── workout/
+│   │   └── [id]/
+│   │       └── page.tsx
+│   └── my-plan/
+│       └── page.tsx
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── WorkoutCard.tsx
+│   ├── LibrarySection.tsx
+│   ├── WorkoutDetailsClient.tsx
+│   └── Footer.tsx
+├── context/
+│   └── PlanContext.tsx
+├── types/
+│   └── index.ts
+└── utils/
+    └── api.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Recommended: Vercel.
 
-## Deploy on Vercel
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Let Vercel detect Next.js automatically.
+4. Deploy.
+5. Test `/`, `/workout/1`, `/my-plan`, refresh on each route, and an invalid route.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Submission
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Live Link: `ADD_YOUR_DEPLOYED_URL`
+- GitHub Repository Link: `ADD_YOUR_REPOSITORY_URL`

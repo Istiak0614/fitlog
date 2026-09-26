@@ -27,6 +27,7 @@ const MyPlanPage = () => {
     plan,
     saved,
     metrics,
+    isHydrated,
     removeFromPlan,
     removeFromSaved,
     markAsDone,
@@ -79,6 +80,19 @@ const MyPlanPage = () => {
 
     return 0;
   });
+  if (!isHydrated) {
+  return (
+    <main className="flex min-h-[70vh] items-center justify-center bg-[#0d0f13]">
+      <div className="text-center">
+        <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-white/10 border-t-[#c8ff00]" />
+
+        <p className="mt-3 text-xs text-white/50">
+          Loading workouts...
+        </p>
+      </div>
+    </main>
+  );
+}
 
   return (
     <main className="min-h-[calc(100vh-140px)] bg-[#0d0f13] text-white">
