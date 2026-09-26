@@ -4,8 +4,8 @@ FitLog is a responsive workout-library and daily-plan application built with Nex
 
 ## 🔗 API
 
-- All workouts: `https://api.abcz.workers.dev/api/fitlog`
-- Single workout: `https://api.abcz.workers.dev/api/fitlog/:id`
+- All workouts: https://api.abcz.workers.dev/api/fitlog
+- Single workout: https://api.abcz.workers.dev/api/fitlog/:id
 
 ## 🛠️ Technologies
 
@@ -98,5 +98,5 @@ Recommended: Vercel.
 
 ## 📬 Submission
 
-- Live Link: `https://fitlog-blond-xi.vercel.app/`
-- GitHub Repository Link: `https://github.com/Istiak0614/fitlog`
+- Live Link: https://fitlog-blond-xi.vercel.app/
+- GitHub Repository Link: https://github.com/Istiak0614/fitlog
