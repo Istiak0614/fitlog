@@ -98,5 +98,5 @@ Recommended: Vercel.
 
 ## 📬 Submission
 
-- Live Link: `ADD_YOUR_DEPLOYED_URL`
-- GitHub Repository Link: `ADD_YOUR_REPOSITORY_URL`
+- Live Link: `https://fitlog-blond-xi.vercel.app/`
+- GitHub Repository Link: `https://github.com/Istiak0614/fitlog`
